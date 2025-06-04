@@ -1,0 +1,9 @@
+{
+	"packages": ["packages/use-form-schema-hook"],
+	"version": "0.0.1",
+	"command": {
+		"version": {
+			"push": true
+		}
+	}
+}

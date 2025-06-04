@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "esnext",
+		"lib": ["dom", "esnext"],
+		"jsx": "react",
+		"declaration": false,
+		"sourceMap": true,
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+
+		/* Linting */
+		// "strict": true,
+		// "noUnusedLocals": true,
+		// "noUnusedParameters": true,
+		// "erasableSyntaxOnly": true,
+		// "noFallthroughCasesInSwitch": true,
+		// "noUncheckedSideEffectImports": true
+
+		"outDir": "dist",
+		"skipLibCheck": true
+	},
+	"include": ["src/index.ts"],
+	"exclude": [
+		"node_modules",
+		"dist",
+		"src/**/*.tsx",
+		"src/**/*.css",
+		"src/hooks"
+	]
+}

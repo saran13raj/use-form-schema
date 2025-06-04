@@ -1,0 +1,56 @@
+{
+	"name": "use-form-schema-hook",
+	"version": "0.0.1",
+	"license": "ISC",
+	"homepage": "https://github.com/saran13raj/use-form-schema",
+	"bugs": "https://github.com/saran13raj/use-form-schema/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/saran13raj/use-form-schema.git",
+		"directory": "./"
+	},
+	"author": "Saran Raj",
+	"amdName": "useFormSchema",
+	"type": "module",
+	"main": "./dist/index.js",
+	"module": "./dist/index.esm.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.esm.js",
+			"require": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist/"
+	],
+	"scripts": {
+		"build": "tsc -b && rollup -c rollup.config.mjs",
+		"prepare": "pnpm run build"
+	},
+	"dependencies": {
+		"react": "^19.1.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.25.0",
+		"@rollup/plugin-commonjs": "^28.0.2",
+		"@rollup/plugin-typescript": "^12.1.2",
+		"@types/react": "^19.1.2",
+		"@types/react-dom": "^19.1.2",
+		"@vitejs/plugin-react": "^4.4.1",
+		"eslint": "^9.25.0",
+		"eslint-plugin-react-hooks": "^5.2.0",
+		"eslint-plugin-react-refresh": "^0.4.19",
+		"rollup": "^4.30.1",
+		"rollup-plugin-dts": "^6.1.1",
+		"rollup-plugin-filesize": "^10.0.0",
+		"tslib": "^2.8.1",
+		"typescript": "~5.8.3",
+		"typescript-eslint": "^8.30.1",
+		"vite": "^6.3.5"
+	},
+	"peerDependencies": {
+		"react": ">=16.8.0"
+	}
+}
