@@ -281,7 +281,7 @@ export function useFormSchema<T extends Record<string, any>>({
 				}
 
 				return true;
-			} catch (error) {
+			} catch (error: any) {
 				// Handle Zod errors
 				if (schemaType.current === 'zod') {
 					const errors: Partial<Record<keyof T, string>> = {};

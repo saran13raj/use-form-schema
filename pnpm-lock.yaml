@@ -142,27 +142,18 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0
     devDependencies:
-      '@eslint/js':
-        specifier: ^9.25.0
-        version: 9.28.0
       '@rollup/plugin-commonjs':
         specifier: ^28.0.2
         version: 28.0.3(rollup@4.41.1)
+      '@rollup/plugin-terser':
+        specifier: ^0.4.4
+        version: 0.4.4(rollup@4.41.1)
       '@rollup/plugin-typescript':
         specifier: ^12.1.2
         version: 12.1.2(rollup@4.41.1)(tslib@2.8.1)(typescript@5.8.3)
       '@types/react':
         specifier: ^19.1.2
         version: 19.1.6
-      '@types/react-dom':
-        specifier: ^19.1.2
-        version: 19.1.6(@types/react@19.1.6)
-      eslint:
-        specifier: ^9.25.0
-        version: 9.28.0
-      eslint-plugin-react-hooks:
-        specifier: ^5.2.0
-        version: 5.2.0(eslint@9.28.0)
       rollup:
         specifier: ^4.30.1
         version: 4.41.1
@@ -172,15 +163,9 @@ importers:
       rollup-plugin-filesize:
         specifier: ^10.0.0
         version: 10.0.0
-      tslib:
-        specifier: ^2.8.1
-        version: 2.8.1
       typescript:
         specifier: ~5.8.3
         version: 5.8.3
-      typescript-eslint:
-        specifier: ^8.30.1
-        version: 8.33.1(eslint@9.28.0)(typescript@5.8.3)
 
 packages:
 
@@ -1369,6 +1354,21 @@ packages:
       magic-string: 0.30.17
       picomatch: 4.0.2
       rollup: 4.41.1
+    dev: true
+
+  /@rollup/plugin-terser@0.4.4(rollup@4.41.1):
+    resolution: {integrity: sha512-XHeJC5Bgvs8LfukDwWZp7yeqin6ns8RTl2B9avbejt6tZqsqvVoWI7ZTQrcNsfKEDWBTnTxM8nMDkO2IFFbd0A==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      rollup: 4.41.1
+      serialize-javascript: 6.0.2
+      smob: 1.5.0
+      terser: 5.40.0
     dev: true
 
   /@rollup/plugin-typescript@12.1.2(rollup@4.41.1)(tslib@2.8.1)(typescript@5.8.3):
@@ -6452,6 +6452,12 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /randombytes@2.1.0:
+    resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
+    dependencies:
+      safe-buffer: 5.2.1
+    dev: true
+
   /raster-react@0.1.1(react@19.1.0):
     resolution: {integrity: sha512-qo9jLGhod5iaPkmwd/q7ZUhy1yRwK2ya15i37A1hvAi9fv3tnfjUYk9JFf0CQt1Nd8LMaHeIvHYRMgLVazjivA==}
     peerDependencies:
@@ -6827,6 +6833,12 @@ packages:
     hasBin: true
     dev: true
 
+  /serialize-javascript@6.0.2:
+    resolution: {integrity: sha512-Saa1xPByTTq2gdeFZYLLo+RFE35NHZkAbqZeWNd3BpzppeVisAqpDjcp8dyf6uIvEqJRd46jemmyA4iFIeVk8g==}
+    dependencies:
+      randombytes: 2.1.0
+    dev: true
+
   /set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
     dev: true
@@ -6966,6 +6978,10 @@ packages:
   /smart-buffer@4.2.0:
     resolution: {integrity: sha512-94hK0Hh8rPqQl2xXc3HsaBoOXKV20MToPkcXvwbISWLEs+64sBq5kFgn2kJDHb1Pry9yrP0dxrCI9RRci7RXKg==}
     engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
+    dev: true
+
+  /smob@1.5.0:
+    resolution: {integrity: sha512-g6T+p7QO8npa+/hNx9ohv1E5pVCmWrVCUzUXJyLdMmftX6ER0oiWY/w9knEonLpnOp6b6FenKnMfR8gqwWdwig==}
     dev: true
 
   /socks-proxy-agent@7.0.0:
