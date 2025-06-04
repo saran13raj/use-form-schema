@@ -4,12 +4,12 @@ import {
 	BasicFormZodExample,
 	DynamicFormZodExample,
 	MultiStepFormZodExample
-} from './demo/zod-demo';
+} from './examples/zod-demo';
 import {
 	BasicFormYupExample,
 	DynamicFormYupExample,
 	MultiStepFormYupExample
-} from './demo/yup-demo';
+} from './examples/yup-demo';
 
 export const Demo: React.FC = () => {
 	const [view, setView] = useState<'zod' | 'yup'>('zod');
