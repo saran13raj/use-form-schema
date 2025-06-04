@@ -25,7 +25,7 @@ pnpm install react zod # or yup
 
 ### With Zod
 
-Example: [ Zod Demo File ](https://github.com/saran13raj/use-form-schema/blob/main/src/demo/zod-demo.tsx)
+Example: [ Zod Demo File ](https://github.com/saran13raj/use-form-schema/blob/main/packages/demo/src/examples/zod-demo.tsx)
 
 ```typescript
 import { z } from 'zod';
@@ -109,7 +109,7 @@ function MyForm() {
 
 ### With Yup
 
-Example: [ Yup Demo File ](https://github.com/saran13raj/use-form-schema/blob/main/src/demo/yup-demo.tsx)
+Example: [ Yup Demo File ](https://github.com/saran13raj/use-form-schema/blob/main/packages/demo/src/examples/yup-demo.tsx)
 
 ```typescript
 import * as yup from 'yup';
