@@ -13,6 +13,7 @@
 	"dependencies": {
 		"babel-plugin-react-compiler": "19.1.0-rc.2",
 		"lucide-react": "^0.487.0",
+		"raster-react": "^0.1.1",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0",
 		"use-form-schema-hook": "workspace:*",

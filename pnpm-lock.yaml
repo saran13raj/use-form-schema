@@ -47,6 +47,9 @@ importers:
       lucide-react:
         specifier: ^0.487.0
         version: 0.487.0(react@19.1.0)
+      raster-react:
+        specifier: ^0.1.1
+        version: 0.1.1(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -154,18 +157,12 @@ importers:
       '@types/react-dom':
         specifier: ^19.1.2
         version: 19.1.6(@types/react@19.1.6)
-      '@vitejs/plugin-react':
-        specifier: ^4.4.1
-        version: 4.5.1(vite@6.3.5)
       eslint:
         specifier: ^9.25.0
         version: 9.28.0
       eslint-plugin-react-hooks:
         specifier: ^5.2.0
         version: 5.2.0(eslint@9.28.0)
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.19
-        version: 0.4.20(eslint@9.28.0)
       rollup:
         specifier: ^4.30.1
         version: 4.41.1
@@ -184,9 +181,6 @@ importers:
       typescript-eslint:
         specifier: ^8.30.1
         version: 8.33.1(eslint@9.28.0)(typescript@5.8.3)
-      vite:
-        specifier: ^6.3.5
-        version: 6.3.5
 
 packages:
 
@@ -6457,6 +6451,14 @@ packages:
     resolution: {integrity: sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==}
     engines: {node: '>=8'}
     dev: true
+
+  /raster-react@0.1.1(react@19.1.0):
+    resolution: {integrity: sha512-qo9jLGhod5iaPkmwd/q7ZUhy1yRwK2ya15i37A1hvAi9fv3tnfjUYk9JFf0CQt1Nd8LMaHeIvHYRMgLVazjivA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 19.1.0
+    dev: false
 
   /react-dom@19.1.0(react@19.1.0):
     resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
