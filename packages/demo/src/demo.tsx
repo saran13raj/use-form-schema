@@ -41,6 +41,13 @@ export const Demo: React.FC = () => {
 			<div className='flex flex-col gap-10'>
 				{view === 'zod' ? (
 					<>
+						<a
+							className='underline underline-offset-2'
+							href='https://github.com/saran13raj/use-form-schema/blob/main/packages/demo/src/examples/zod-demo.tsx'
+							target='_blank'
+						>
+							Code example with zod
+						</a>
 						<section>
 							<h2 className='mb-4 text-2xl font-semibold text-zinc-100'>
 								1. Basic Registration Form with Zod
@@ -62,6 +69,13 @@ export const Demo: React.FC = () => {
 					</>
 				) : (
 					<>
+						<a
+							className='underline underline-offset-2'
+							href='https://github.com/saran13raj/use-form-schema/blob/main/packages/demo/src/examples/yup-demo.tsx'
+							target='_blank'
+						>
+							Code example with yup
+						</a>
 						<section>
 							<h2 className='mb-4 text-2xl font-semibold text-zinc-100'>
 								1. Basic Registration Form with Yup
